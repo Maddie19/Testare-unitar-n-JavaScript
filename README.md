@@ -17,8 +17,8 @@ npm install
 npm test
 
 
-**3. Strategii de testare**
-```markdown
+
+
 ## Strategii de testare
 
 - Testare black-box pentru funcții publice (addTask, deleteTask, toggleTask, getTasks, clearTasks).
