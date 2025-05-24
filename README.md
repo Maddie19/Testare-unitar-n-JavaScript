@@ -20,7 +20,9 @@ Software/Hardware configuration:
 
   1. Coverage test
      npm test -- --coverage
-![Uploading Screenshot 2025-05-25 at 02.09.42.png…]()
+     
+     <img width="566" alt="Screenshot 2025-05-25 at 02 09 42" src="https://github.com/user-attachments/assets/4fc3a438-cbf3-44d8-84ff-e83a0e2a3b85" />
+
 
 
 Instalare si rulare
