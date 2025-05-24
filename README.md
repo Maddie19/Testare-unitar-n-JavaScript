@@ -18,6 +18,10 @@ Software/Hardware configuration:
 - Testare pozitivă: adăugare, ștergere, toggle.
 - Testare negativă: input invalid, index greșit.
 
+  1. Coverage test
+     npm test -- --coverage
+![Uploading Screenshot 2025-05-25 at 02.09.42.png…]()
+
 
 Instalare si rulare
 ```bash
