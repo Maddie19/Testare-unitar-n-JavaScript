@@ -1,6 +1,6 @@
 # Testare-unitara-in-JavaScript
 
-Tema T4: Utilizarea unui framework de testare unitară (Jest) pentru testarea logicii unui Task Manager în JavaScript. Prin componente JavaScript am înțeles funcțiile și clasele care implementează logica principală a aplicației Task Manager (ex: adăugare, ștergere, modificare status task). Pentru acestea am realizat testarea unitară cu Jest. compară testele proprii cu cele generate de ChatGPT.
+Tema T4: Utilizarea unui framework de testare unitară (Jest) pentru testarea logicii unui Task Manager în JavaScript. În cadrul acestui proiect, componentele JavaScript testate unitar sunt funcțiile și metodele care gestionează logica aplicației (addTask, deleteTask, toggleTask etc.). Interfața grafică (HTML/DOM) nu a fost inclusă în testarea unitară, deoarece testarea componentelor JS se referă la logica aplicativă, nu la partea vizuală. 
 
 Software/Hardware configuration:
 
