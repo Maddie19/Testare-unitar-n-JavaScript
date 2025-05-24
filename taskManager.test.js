@@ -51,4 +51,37 @@ describe('TaskManager', () => {
   expect(2 + 2).toBe(4);
 });
 
+test('getTasks returnează o copie, nu referința originală', () => {
+  manager.addTask("A");
+  const tasksCopy = manager.getTasks();
+  tasksCopy[0].text = "MODIFIED";
+  // Task-ul original nu se modifică!
+  expect(manager.getTasks()[0].text).toBe("A");
+});
+
+test('addTask elimină spațiile la început/sfârșit', () => {
+  manager.addTask("  ceva   ");
+  expect(manager.getTasks()[0].text).toBe("ceva");
+});
+
+test('deleteTask returnează taskul șters', () => {
+  manager.addTask("A");
+  const deleted = manager.deleteTask(0);
+  expect(deleted).toEqual({ text: "A", completed: false });
+});
+
+test('constructor primește o listă de taskuri', () => {
+  const initial = [{ text: "X", completed: true }];
+  const newManager = new TaskManager(initial);
+  expect(newManager.getTasks().length).toBe(1);
+  expect(newManager.getTasks()[0].text).toBe("X");
+  expect(newManager.getTasks()[0].completed).toBe(true);
+});
+
+test('clearTasks poate fi apelată pe o listă deja goală', () => {
+  manager.clearTasks();
+  expect(manager.getTasks()).toEqual([]);
+});
+
+
 });

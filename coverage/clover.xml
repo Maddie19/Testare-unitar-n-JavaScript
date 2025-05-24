@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1748129245537" clover="3.2.0">
+  <project timestamp="1748129245537" name="All files">
+    <metrics statements="16" coveredstatements="16" conditionals="16" coveredconditionals="16" methods="6" coveredmethods="6" elements="38" coveredelements="38" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
+    <file name="taskManager.js" path="/Users/madalinamiron/Desktop/Testare-unitara-in-JavaScript/taskManager.js">
+      <metrics statements="16" coveredstatements="16" conditionals="16" coveredconditionals="16" methods="6" coveredmethods="6"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="7" count="7" type="cond" truecount="5" falsecount="0"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="10" count="5" type="stmt"/>
+      <line num="11" count="5" type="stmt"/>
+      <line num="12" count="5" type="stmt"/>
+      <line num="16" count="2" type="cond" truecount="5" falsecount="0"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="23" count="3" type="cond" truecount="5" falsecount="0"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="26" count="2" type="stmt"/>
+      <line num="27" count="2" type="stmt"/>
+      <line num="31" count="5" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="39" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
