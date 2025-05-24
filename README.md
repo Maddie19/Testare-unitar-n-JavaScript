@@ -24,6 +24,7 @@ Software/Hardware configuration:
      
 <img width="561" alt="Screenshot 2025-05-25 at 02 28 02" src="https://github.com/user-attachments/assets/0fd301a0-bb33-4319-b525-0f2c16e56187" />
 
+<img width="574" alt="Screenshot 2025-05-25 at 02 32 58" src="https://github.com/user-attachments/assets/3b72b2dd-7782-48cc-ba2a-11738702bd99" />
 
 
 Instalare si rulare
