@@ -11,16 +11,23 @@ Software/Hardware configuration:
 - IDE: VSCode
 - Mașină virtuală: Nu a fost utilizată
 
-Instalare si rulare
-```bash
-npm install
-npm test
-```bash
-
-
-Strategii de testare
+  Strategii de testare
 
 - Testare black-box pentru funcții publice (addTask, deleteTask, toggleTask, getTasks, clearTasks).
 - Testare edge-case: text gol, index invalid.
 - Testare pozitivă: adăugare, ștergere, toggle.
 - Testare negativă: input invalid, index greșit.
+
+
+Instalare si rulare
+```bash
+npm install
+npm test
+
+
+## Referințe bibliografice
+
+[1] Jest, Documentație oficială, https://jestjs.io/, Data ultimei accesări: 24 mai 2025  
+[2] OpenAI, ChatGPT, https://chatgpt.com/, Data generării: 24 mai 2025  
+
+
