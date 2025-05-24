@@ -15,3 +15,13 @@ Instalare si rulare
 ```bash
 npm install
 npm test
+
+
+**3. Strategii de testare**
+```markdown
+## Strategii de testare
+
+- Testare black-box pentru funcții publice (addTask, deleteTask, toggleTask, getTasks, clearTasks).
+- Testare edge-case: text gol, index invalid.
+- Testare pozitivă: adăugare, ștergere, toggle.
+- Testare negativă: input invalid, index greșit.
