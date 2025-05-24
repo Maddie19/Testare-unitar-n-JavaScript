@@ -27,6 +27,77 @@ Software/Hardware configuration:
 <img width="574" alt="Screenshot 2025-05-25 at 02 32 58" src="https://github.com/user-attachments/assets/3b72b2dd-7782-48cc-ba2a-11738702bd99" />
 
 
+Strategii de testare
+
+
+1. Partiționare în clase de echivalență
+Grupați inputurile în clase de valori echivalente, astfel încât testarea unui exemplu din fiecare clasă să fie suficientă.
+
+Exemple:
+
+Task valid (string nenul, nevid, cu text real)
+
+Task invalid (string gol, doar spații, null, undefined)
+
+Index valid pentru ștergere/toggle vs. index invalid (negativ, prea mare, neîntreg)
+
+2. Analiza valorilor de frontieră
+Testezi limitele intervalelor sau cazurile „de margine”.
+
+Exemple:
+
+Index 0 (primul task), index egal cu lungimea arrayului - 1 (ultimul task)
+
+Task adăugat cu exact un caracter, sau cu spații la capete
+
+Golirea unei liste deja goale
+
+3. Acoperirea codului (coverage)
+Rulezi testele cu Jest și analizezi cât la sută din codul sursă este executat de teste.
+
+Exemple:
+
+Instrucțiuni (statements)
+
+Ramuri de decizie (branches)
+
+Funcții (functions)
+
+Linii de cod (lines)
+
+4. Testare pozitivă și negativă
+Pozitivă: vezi că funcțiile fac ceea ce trebuie la inputuri corecte.
+
+Negativă: verifici că aruncă eroare/nu fac nimic când inputul e invalid.
+
+Exemple:
+
+addTask("Ceva") => task nou creat
+
+addTask("") sau addTask(null) => aruncă eroare
+
+5. Testare la nivel de decizie/condiție
+Te asiguri că fiecare ramură a instrucțiunilor if, else, throw etc. este acoperită.
+
+Exemple:
+
+Testezi și când indexul este valid, și când este invalid
+
+Task completat și task necompletat la toggle
+
+6. Testare la nivel de structură/izolare
+Testezi fiecare metodă independent de UI, direct pe instanța clasei TaskManager.
+
+Exemple:
+
+getTasks returnează o copie, nu referința originală
+
+Constructorul cu array presetat
+
+7. Testare regresivă/manuală (opțional, pentru UI)
+Verifici manual că acțiunile din UI (adăugare, ștergere, toggle) se comportă corect, dar aici profesorul vrea testare unitară pe JS, nu testare UI automată.
+
+
 Instalare si rulare
 ```bash
 npm install
