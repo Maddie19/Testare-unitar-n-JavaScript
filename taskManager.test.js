@@ -46,4 +46,9 @@ describe('TaskManager', () => {
     manager.clearTasks();
     expect(manager.getTasks().length).toBe(0);
   });
+
+  test('test simplu: 2+2=4', () => {
+  expect(2 + 2).toBe(4);
+});
+
 });
