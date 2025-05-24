@@ -19,9 +19,10 @@ Software/Hardware configuration:
 - Testare negativă: input invalid, index greșit.
 
   1. Coverage test
+     
      npm test -- --coverage
      
-     <img width="566" alt="Screenshot 2025-05-25 at 02 09 42" src="https://github.com/user-attachments/assets/4fc3a438-cbf3-44d8-84ff-e83a0e2a3b85" />
+<img width="561" alt="Screenshot 2025-05-25 at 02 28 02" src="https://github.com/user-attachments/assets/0fd301a0-bb33-4319-b525-0f2c16e56187" />
 
 
 
