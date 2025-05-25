@@ -106,10 +106,13 @@ npm test
 
 📚 Referințe
 [1] OpenAI, ChatGPT, https://chatgpt.com/, Data generării: 25 mai 2025
+
 [2] Jest - https://jestjs.io/
+
 [3] Stryker - https://stryker-mutator.io/
-[4] Diagrams.net, https://app.diagrams.net/
-, Data acces: 25 mai 2025
+
+[4] Diagrams.net, https://app.diagrams.net/, Data acces: 25 mai 2025
+
 [5] Node.js - https://nodejs.org/
 
 
