@@ -2,7 +2,7 @@
 
 Tema T4: Utilizarea unui framework de testare unitară (Jest) pentru testarea logicii unui Task Manager în JavaScript. În cadrul acestui proiect, componentele JavaScript testate unitar sunt funcțiile și metodele care gestionează logica aplicației (addTask, deleteTask, toggleTask etc.). Interfața grafică (HTML/DOM) nu a fost inclusă în testarea unitară, deoarece testarea componentelor JS se referă la logica aplicativă, nu la partea vizuală. 
 
-Software/Hardware configuration:
+I.Software/Hardware configuration:
 
 - Sistem: Windows 10 / Ubuntu 22.04 / MacOS (testat local)
 - Node.js: v20.x
@@ -11,7 +11,7 @@ Software/Hardware configuration:
 - IDE: VSCode
 - Mașină virtuală: Nu a fost utilizată
 
-  Strategii de testare
+ II. Strategii de testare
 
 - Testare black-box pentru funcții publice (addTask, deleteTask, toggleTask, getTasks, clearTasks).
 - Testare edge-case: text gol, index invalid.
@@ -98,8 +98,8 @@ Constructorul cu array presetat
 Verifici manual că acțiunile din UI (adăugare, ștergere, toggle) se comportă corect, dar aici profesorul vrea testare unitară pe JS, nu testare UI automată.
 
 
-Instalare si rulare
-```bash
+III.Instalare si rulare
+
 npm install
 npm test
 
