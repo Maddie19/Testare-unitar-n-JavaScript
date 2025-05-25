@@ -30,7 +30,7 @@ class TaskManager {
  getTasks() {
   // returnează o copie nouă a fiecărui task
   return this.tasks.map(task => ({ ...task }));
-}
+  }
 
 
   clearTasks() {

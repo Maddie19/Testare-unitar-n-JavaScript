@@ -18,6 +18,7 @@ describe('TaskManager', () => {
     expect(() => manager.addTask("")).toThrow("Task text invalid!");
     expect(() => manager.addTask("   ")).toThrow("Task text invalid!");
   });
+  
 
   test('deleteTask șterge corect', () => {
     manager.addTask("A");
