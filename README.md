@@ -104,7 +104,9 @@ npm install
 npm test
 
 
+
 📚 Referințe
+
 [1] OpenAI, ChatGPT, https://chatgpt.com/, Data generării: 25 mai 2025
 
 [2] Jest - https://jestjs.io/
