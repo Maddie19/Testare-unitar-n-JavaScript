@@ -136,6 +136,14 @@ VI.Diagrama
 
 ![Diagram2 drawio](https://github.com/user-attachments/assets/2487e2c9-57eb-44fa-a9b6-bbbdb4b8cc21)
 
+VII. Raport depre folosirea unui tool de AI
+
+Testele generate de mine, reflecta experienta scrierii acestora, deci, prin urmare, atat eficienta lor cat si numarul erorilor sunt direct proportionate cu aceasta, impactul uman fiind inevitabil. Testele generate de AI reflecta o eficienta mai sporita insa tot cu ajutorul inteligentei artificiale am reusit sa invat informatii noi despre acest domeniu de activitate, am reusit sa imi imbunatatesc majoritatea competentelor, atat cele practice cat si cele teoretice, pentru ca in final, sa pot concluziona ca abilitatile mele de tester sunt intr-o continua evolutie insa cu ajutorul unor tooluri ai, pot avans si ma pot dezvolta eficient si sigur. Urmatoarele printscreenuri au fost atasate pentru a putea vizualiza eficienta celor doua categorii de teste. 
+
+
+<img width="556" alt="Screenshot 2025-05-25 at 08 09 55" src="https://github.com/user-attachments/assets/a42e7a4d-61d9-471e-a29e-a3bc9e8ff29d" />
+
+<img width="699" alt="Screenshot 2025-05-25 at 08 03 06" src="https://github.com/user-attachments/assets/36225726-3b80-4ff6-9b4b-9c8fa6c9e2c9" />
 
    
 📚 Referințe
