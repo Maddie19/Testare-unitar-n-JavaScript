@@ -104,7 +104,17 @@ npm install
 npm test
 
 
-## Referințe bibliografice
+📚 Referințe
+[1] OpenAI, ChatGPT, https://chatgpt.com/, Data generării: 25 mai 2025
+[2] Jest - https://jestjs.io/
+
+[3] Stryker - https://stryker-mutator.io/
+
+[4] Diagrams.net, https://app.diagrams.net/
+, Data acces: 25 mai 2025
+[5] Node.js - https://nodejs.org/
+
+
 
 [1] Jest, Documentație oficială, https://jestjs.io/, Data ultimei accesări: 24 mai 2025  
 [2] OpenAI, ChatGPT, https://chatgpt.com/, Data generării: 24 mai 2025  
