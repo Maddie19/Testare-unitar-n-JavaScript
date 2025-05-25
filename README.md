@@ -71,6 +71,9 @@ Pozitivă: am verificat si m-am asigurat că funcțiile fac ceea ce trebuie la i
 
 Negativă: am verificat si m-an asigurat că aruncă eroare/nu fac nimic când inputul e invalid.
 
+Cu ajutorul unor input-uri extreme sau random, am dorit sa evidentiez daca aplicatia functioneaza corect sau nu, daca poate fi blocata sau chiar inghetata(cu aceste teste putem descori freezuri sau chiar blockers care pot conduce la un crash cauzat de latenta resposivitatii aplicatiei). Cel mai importat de mentionat este faptul ca acest tip de teste ajuta ca aplicatia sa fie cat mai calitativa si sigura posibil.
+
+
 Exemple:
 
 addTask("Ceva") => task nou creat
@@ -95,15 +98,15 @@ getTasks returnează o copie, nu referința originală
 
 Constructorul cu array presetat
 
-7. Testare regresivă/manuală (opțional, pentru UI)
+7. Testare regresivă/manuală (este opționala aceasta testare, pentru UI)
    
-Am verifici manual că acțiunile din UI (adăugare, ștergere, toggle) se comportă corect.
+Am verificat manual că acțiunile din UI (adăugare, ștergere, toggle) se comportă corect.
 
 IV. Coverage
 
 <img width="1437" alt="Screenshot 2025-05-25 at 06 51 25" src="https://github.com/user-attachments/assets/72d7b10f-24b8-46ef-bba7-c88a5d8911bc" />
 
-V.Pasii pe care i-am urmat pentru rula testele
+V.Pasii pe care i-am urmat pentru a rula testele
 
 1.Am clonat repo-ul:
 
