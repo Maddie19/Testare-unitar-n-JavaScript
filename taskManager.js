@@ -27,9 +27,11 @@ class TaskManager {
     return this.tasks[index].completed;
   }
 
-  getTasks() {
-    return [...this.tasks];
-  }
+ getTasks() {
+  // returnează o copie nouă a fiecărui task
+  return this.tasks.map(task => ({ ...task }));
+}
+
 
   clearTasks() {
     this.tasks = [];
