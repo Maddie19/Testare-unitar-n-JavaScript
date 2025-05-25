@@ -83,5 +83,53 @@ test('clearTasks poate fi apelată pe o listă deja goală', () => {
   expect(manager.getTasks()).toEqual([]);
 });
 
+test('addTask acceptă stringuri foarte lungi', () => {
+  const longText = 'a'.repeat(10000);
+  manager.addTask(longText);
+  expect(manager.getTasks()[0].text.length).toBe(10000);
+});
+
+test('addTask acceptă caractere unicode și emoji', () => {
+  manager.addTask("😊🚀✨汉字");
+  expect(manager.getTasks()[0].text).toBe("😊🚀✨汉字");
+});
+
+test('addTask aruncă eroare pentru null/undefined', () => {
+  expect(() => manager.addTask(null)).toThrow("Task text invalid!");
+  expect(() => manager.addTask(undefined)).toThrow("Task text invalid!");
+});
+
+test('addTask aruncă eroare pentru număr în loc de string', () => {
+  expect(() => manager.addTask(1234)).toThrow("Task text invalid!");
+});
+
+test('deleteTask aruncă eroare pentru index foarte mare', () => {
+  manager.addTask("A");
+  expect(() => manager.deleteTask(10000)).toThrow("Index invalid!");
+});
+
+test('deleteTask aruncă eroare pentru index negativ', () => {
+  manager.addTask("B");
+  expect(() => manager.deleteTask(-1)).toThrow("Index invalid!");
+});
+
+test('toggleTask aruncă eroare pentru index non-integer', () => {
+  manager.addTask("C");
+  expect(() => manager.toggleTask(1.5)).toThrow("Index invalid!");
+});
+
+test('poți adăuga foarte multe taskuri', () => {
+  for(let i = 0; i < 1000; i++) {
+    manager.addTask(`Task #${i}`);
+  }
+  expect(manager.getTasks().length).toBe(1000);
+});
+
+test('addTask cu string random', () => {
+  const randomStr = Math.random().toString(36).substring(2, 100);
+  manager.addTask(randomStr);
+  expect(manager.getTasks()[0].text).toBe(randomStr);
+});
+
 
 });
