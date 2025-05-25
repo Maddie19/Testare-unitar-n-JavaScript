@@ -1,6 +1,6 @@
 # Testare-unitara-in-JavaScript
 
-Tema T4: Utilizarea unui framework de testare unitară (Jest) pentru testarea logicii unui Task Manager în JavaScript. În cadrul acestui proiect, componentele JavaScript testate unitar sunt funcțiile și metodele care gestionează logica aplicației (addTask, deleteTask, toggleTask etc.). Interfața grafică (HTML/DOM) nu a fost inclusă în testarea unitară, deoarece testarea componentelor JS se referă la logica aplicativă, nu la partea vizuală. 
+Tema T4: Utilizarea unui framework de testare unitară, in cazul meu Jest, pentru testarea logicii unui Task Manager în JavaScript. În cadrul acestui proiect, componentele JavaScript testate unitar sunt funcțiile și metodele care gestionează logica aplicației (addTask, deleteTask, toggleTask etc.). Interfața grafică (HTML/DOM) nu a fost inclusă în testarea unitară, deoarece testarea componentelor JS se referă la logica aplicativă, nu la partea vizuală. 
 
 I.Software/Hardware configuration:
 
@@ -31,7 +31,7 @@ Strategii de testare
 
 
 1. Partiționare în clase de echivalență
-Grupați inputurile în clase de valori echivalente, astfel încât testarea unui exemplu din fiecare clasă să fie suficientă.
+Am grupat inputurile în clase de valori echivalente, astfel încât testarea unui exemplu din fiecare clasă să fie suficientă.
 
 Exemple:
 
@@ -42,7 +42,7 @@ Task invalid (string gol, doar spații, null, undefined)
 Index valid pentru ștergere/toggle vs. index invalid (negativ, prea mare, neîntreg)
 
 2. Analiza valorilor de frontieră
-Testezi limitele intervalelor sau cazurile „de margine”.
+Am testat limitele intervalelor sau edge case-urilor.
 
 Exemple:
 
@@ -53,7 +53,7 @@ Task adăugat cu exact un caracter, sau cu spații la capete
 Golirea unei liste deja goale
 
 3. Acoperirea codului (coverage)
-Rulezi testele cu Jest și analizezi cât la sută din codul sursă este executat de teste.
+Am rulat testele cu Jest și am analizat cât la sută din codul sursă este executat de teste.
 
 Exemple:
 
@@ -66,9 +66,10 @@ Funcții (functions)
 Linii de cod (lines)
 
 4. Testare pozitivă și negativă
-Pozitivă: vezi că funcțiile fac ceea ce trebuie la inputuri corecte.
 
-Negativă: verifici că aruncă eroare/nu fac nimic când inputul e invalid.
+Pozitivă: am verificat si m-am asigurat că funcțiile fac ceea ce trebuie la inputuri corecte.
+
+Negativă: am verificat si m-an asigurat că aruncă eroare/nu fac nimic când inputul e invalid.
 
 Exemple:
 
@@ -77,16 +78,16 @@ addTask("Ceva") => task nou creat
 addTask("") sau addTask(null) => aruncă eroare
 
 5. Testare la nivel de decizie/condiție
-Te asiguri că fiecare ramură a instrucțiunilor if, else, throw etc. este acoperită.
+   
+M-am asigurat că fiecare ramură a instrucțiunilor if, else, throw etc. este acoperită.
 
-Exemple:
+Prezint drept exemplu situatia cand testez și când indexul este valid, și când este invalid
 
-Testezi și când indexul este valid, și când este invalid
-
-Task completat și task necompletat la toggle
+Alt exemplu ar fi, task completat și task necompletat la toggle
 
 6. Testare la nivel de structură/izolare
-Testezi fiecare metodă independent de UI, direct pe instanța clasei TaskManager.
+
+Am testat fiecare metodă independent de UI, direct pe instanța clasei TaskManager.
 
 Exemple:
 
@@ -95,16 +96,45 @@ getTasks returnează o copie, nu referința originală
 Constructorul cu array presetat
 
 7. Testare regresivă/manuală (opțional, pentru UI)
-Verifici manual că acțiunile din UI (adăugare, ștergere, toggle) se comportă corect, dar aici profesorul vrea testare unitară pe JS, nu testare UI automată.
+   
+Am verifici manual că acțiunile din UI (adăugare, ștergere, toggle) se comportă corect.
 
+IV. Coverage
 
-III.Instalare si rulare
+<img width="1437" alt="Screenshot 2025-05-25 at 06 51 25" src="https://github.com/user-attachments/assets/72d7b10f-24b8-46ef-bba7-c88a5d8911bc" />
+
+V.Pasii pe care i-am urmat pentru rula testele
+
+1.Am clonat repo-ul:
+
+git clone https://github.com/Maddie19/Testare-unitara-in-JavaScript.git
+cd Testare-unitara-in-JavaScript
+
+2.Am instalat dependențele:
 
 npm install
+
+3.Am rulat testele Jest:
+
 npm test
 
+4.Am generat raport de acoperire (coverage):
+
+npm test -- --coverage
+
+5. Am rulat testarea cu mutanți (Stryker):
+
+npx stryker run
+
+VI.Diagrama
 
 
+![Untitled Diagram drawio](https://github.com/user-attachments/assets/77d85edb-d2df-42db-ae3e-0dcf9b18f296)
+
+![Diagram2 drawio](https://github.com/user-attachments/assets/2487e2c9-57eb-44fa-a9b6-bbbdb4b8cc21)
+
+
+   
 📚 Referințe
 
 [1] OpenAI, ChatGPT, https://chatgpt.com/, Data generării: 25 mai 2025
